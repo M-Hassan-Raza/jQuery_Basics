@@ -92,3 +92,59 @@ li{
     text-decoration: none;
     list-style: none;
 }
+
+.modalBox {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6); }
+    .modalBox .modalContent {
+      background: #fff;
+      padding: 40px 40px 20px;
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation-name: modalZoom;
+      animation-duration: 0.3s; }
+      @media only screen and (max-width: 1199px) {
+        .modalBox .modalContent {
+          width: 50%; } }
+      @media only screen and (max-width: 767px) {
+        .modalBox .modalContent {
+          width: 80%;
+          padding: 40px 25px 20px; } }
+    .modalBox .close {
+      color: #000;
+      position: absolute;
+      top: 2px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: color 0.3s linear; }
+      .modalBox .close:hover, .modalBox .close:focus {
+        color: #e31c25; }
+    .modalBox .formHolder h2 {
+      font-size: 24px; }
+      @media only screen and (max-width: 767px) {
+        .modalBox .formHolder h2 {
+          font-size: 20px; } }
+    .modalBox .formHolder .row {
+      margin: 0 0 20px; }
+    .modalBox .formHolder label {
+      display: block;
+      margin: 0 0 10px; }
+    .modalBox .formHolder input[type="text"],
+    .modalBox .formHolder input[type="password"] {
+      width: 100%;
+      margin: 0 0 10px; }
+    .modalBox .formHolder .error {
+      color: #e31c25;
+      font-size: 14px; }
+  

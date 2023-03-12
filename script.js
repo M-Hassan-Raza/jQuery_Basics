@@ -32,4 +32,10 @@ $(document).ready(function () {
         $("#berserk").fadeIn("slow");
     });
 
+    var modal = $('.modalBox');
+
+    $('#displaymodal').click(function () {
+        modal.show();
+    });
+
 });  
